@@ -1,0 +1,431 @@
+// - Dark Blue (intro and email sign up background)
+$intro: hsl(217, 28%, 15%);
+$Email: hsl(217, 28%, 15%);
+// - Dark Blue (main background)
+$mainBackground: hsl(218, 28%, 13%);
+// - Dark Blue (footer background)
+$footer: hsl(216, 53%, 9%);
+// - Dark Blue (testimonials background)
+$testimonial: hsl(219, 30%, 18%);
+// Button on hover & See how call-to-action
+$hover: hsl(176, 68%, 64%);
+// Button background color
+$button: hsl(198, 60%, 50%);
+// Error message Light Red
+$error: hsl(0, 100%, 63%);
+// Head tag font
+$header: "Raleway", sans-serif;
+// Body font
+$body: "Open Sans", sans-serif;
+// Text COlor
+$textColor: hsl(0, 0%, 100%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: $intro;
+}
+
+.introEmail {
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em 4em;
+
+    & .logo {
+      width: 100%;
+    }
+
+    & .navLinks {
+      & a {
+        font-size: 14px;
+        color: $textColor;
+        text-decoration: none;
+        padding-left: 2em;
+        font-family: $body;
+
+        &:hover {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  & .introImg {
+    display: flex;
+    justify-content: space-around;
+
+    & img {
+      width: 500px;
+    }
+  }
+
+  & .introTextHead {
+    display: flex;
+    justify-content: space-around;
+
+    & .introText {
+      text-align: center;
+      & h1 {
+        padding: 20px;
+        font-size: 28px;
+        line-height: 2.5rem;
+        font-family: $header;
+        color: $textColor;
+      }
+      & button {
+        font-size: 14px;
+        margin-top: 28px;
+        padding: 1.2em 4.2em;
+        color: $textColor;
+        outline: none;
+        border-style: none;
+        background-color: $button;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $hover;
+          outline: none;
+          border-style: none;
+        }
+      }
+      & .introTextPara {
+        padding: 8px 0 4px 0;
+
+        & p {
+          font-family: $body;
+          font-size: 16px;
+          line-height: 24px;
+          word-spacing: 2px;
+          color: $textColor;
+        }
+      }
+    }
+  }
+  & .curve {
+    z-index: -3;
+    position: absolute;
+    top: 37.5rem;
+    left: -4rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.main {
+  background-color: $mainBackground;
+  margin-top: 12rem;
+
+  & .fileSection {
+    width: 100%;
+
+    & .fileHolder {
+      padding: 0 0 6rem 0;
+      align-items: center;
+      z-index: 1;
+      position: relative;
+      top: -3rem;
+
+      & .fileWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & .fileInput {
+          padding: 1.8rem 0;
+          width: 300px;
+          text-align: center;
+
+          & img {
+            width: 60px;
+          }
+
+          & h3 {
+            padding: 1.4em 0 0.6em 0;
+            font-size: 16px;
+            color: $textColor;
+            font-family: $body;
+          }
+
+          & p {
+            color: $textColor;
+            font-family: $body;
+            font-size: 14px;
+            word-spacing: 1.5px;
+          }
+        }
+      }
+    }
+  }
+
+  & .productive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 4rem 4rem;
+
+    & .productiveImg {
+      width: 50%;
+    }
+
+    .productiveText {
+      width: 50%;
+      padding: 1em 3em;
+
+      & h2 {
+        padding: 0 0 20px 0;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 2.5rem;
+        color: $textColor;
+        font-family: $header;
+      }
+
+      .productiveTextPara {
+        & p {
+          font-family: $body;
+          font-size: 14px;
+          padding: 5px 0 12px 0;
+          color: $textColor;
+        }
+
+        .seeHow button {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          background: transparent;
+          color: $hover;
+          font-family: $body;
+          font-size: 14px;
+          border: none;
+          padding: 2px 0;
+          border-bottom: 2px solid $hover;
+
+          & img {
+            padding-left: 5px;
+          }
+
+          &:hover {
+            color: hsl(0, 0%, 100%);
+            cursor: pointer;
+            border-bottom: 2px solid hsl(0, 0%, 100%);
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  & .testimonial {
+    padding: 5rem 5rem;
+
+    & .container {
+      display: flex;
+      justify-content: space-evenly;
+
+      & .testimonialItem {
+        z-index: 2;
+
+        & .testimonialItemWrap {
+          background: $testimonial;
+          border-radius: 4px;
+          width: 350px;
+          z-index: 1;
+
+          & .testimonialItemText {
+            padding: 30px 20px 10px 20px;
+
+            & p {
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 10px;
+              word-spacing: 2px;
+              font-family: $body;
+              color: $textColor;
+            }
+          }
+
+          & .testimonialItemImg {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 20px 20px 20px;
+
+            & img {
+              width: 30px;
+              border-radius: 50%;
+            }
+
+            & h4 {
+              font-size: 12px;
+              font-weight: 600;
+              padding-left: 10px;
+              color: $textColor;
+              font-family: $body;
+            }
+
+            & p {
+              font-size: 12px;
+              font-weight: 400;
+              padding-left: 10px;
+              color: $textColor;
+              font-family: $body;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .earlyAccess {
+    background: $Email;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    height: 250px;
+    z-index: 2;
+    position: relative;
+    top: 5rem;
+
+    & .accessText {
+      & h2 {
+        padding: 1rem 0;
+        font-family: $header;
+        color: $textColor;
+      }
+
+      & p {
+        font-size: 14px;
+        word-spacing: 2px;
+        line-height: 20px;
+        color: $textColor;
+        font-family: $body;
+      }
+    }
+
+    & .accessInput {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      & input[type=email] {
+        font-size: 14px;
+        margin-top: 28px;
+        padding: 1rem 12rem 1rem 1rem;
+        outline: none;
+        border-style: none;
+        background-color: #FFF;
+        border-radius: 50px;
+      }
+
+      & button {
+        font-weight: 400;
+        margin-top: 28px;
+        padding: 1rem 2.5rem;
+        color: $textColor;
+        outline: none;
+        border-style: none;
+        background-color: $button;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: hsl(176, 68%, 64%);
+          outline: none;
+          border-style: none;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: $footer;
+  height: 500px;
+  padding: 12rem 6rem 5rem 6rem;
+}
+
+.footerLogo {
+  display: flex;
+  text-align: left;
+}
+
+li {
+  color: $textColor;
+  list-style: none;
+  font-family: $body;
+  line-height: 30px;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  & a {
+    color: $textColor;
+    text-decoration: none;
+  }
+}
+
+.footerHolder {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  & .logoInfo {
+    display: flex;
+
+    & img {
+      display: inline-flex;
+      width: 13px;
+      height: 18px;
+    }
+
+    & p {
+      font-size: 14px;
+      word-spacing: 2px;
+      width: 300px;
+      padding-left: 25px;
+      font-family: $body;
+      color: $textColor;
+      /* line-height: 20px; */
+    }
+  }
+
+  & .callMail img {
+    padding-right: 20px;
+  }
+
+  .contact {
+    display: flex;
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+
+    .contactLine {
+      margin-left: 100px;
+    }
+  }
+
+  .socialIcons {
+    display: flex;
+
+    & img {
+      margin-left: 20px;
+    }
+  }
+}

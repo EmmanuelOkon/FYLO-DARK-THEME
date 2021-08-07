@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: hsl(217, 28%, 15%);
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+}
+
+.introEmail img {
+  width: 100%;
+}
+
+.curve {
+  z-index: -3;
+  position: absolute;
+  top: 37.5rem;
+  left: -2rem;
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em 4em;
+}
+
+.logo {
+  width: 100%;
+}
+
+/* .navLogo:hover {
+  cursor: pointer;
+} */
+
+.navLinks a {
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  /* color: red; */
+  text-decoration: none;
+  padding-left: 2em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navLinks a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+.introImg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.introImg img {
+  width: 500px;
+}
+
+.introTextHead {
+  display: flex;
+  justify-content: space-around;
+}
+
+.introText {
+  text-align: center;
+}
+
+.introText h1 {
+  padding: 20px;
+  font-size: 28px;
+  line-height: 2.5rem;
+}
+
+.introTextPara {
+  padding: 8px 0 4px 0;
+}
+
+.introTextPara p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  word-spacing: 2px;
+  
+}
+
+.introText button {
+  font-size: 14px;
+  margin-top: 28px;
+  padding: 1.2em 4.2em;
+  color: hsl(0, 0%, 100%);
+  outline: none;
+  border-style: none;
+  background-color: hsl(198, 60%, 50%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.introText button:hover {
+  background-color: hsl(176, 68%, 64%);
+  outline: none;
+  border-style: none;
+}
+
+.main {
+  background-color: hsl(218, 28%, 13%);
+  margin-top: 12rem;
+}
+
+.fileSection {
+  width: 100%;
+}
+
+
+.fileHolder {
+  padding: 0 0 6rem 0;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  top: -3rem;
+}
+
+.fileWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fileInput {
+  padding: 1.8rem 0;
+  width: 300px;
+  text-align: center;
+}
+
+.fileInputImg img {
+  width: 40px;
+}
+
+.fileInputText p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  word-spacing: 1.5px;
+}
+
+.fileInput h3 {
+  padding: 1.2em 0 0.6em 0;
+  font-size: 14px;
+}
+
+.productive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem 4rem 4rem;
+}
+
+.productiveImg {
+  width: 50%;
+}
+
+.productiveImg img {
+  width: 100%;
+}
+
+.productiveText {
+  width: 50%;
+  padding: 1em 3em;
+}
+
+.productiveTextHead h2 {
+  padding: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.productiveTextPara p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 5px 0 12px 0;
+}
+
+.seeHow button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: hsl(176, 68%, 64%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  border: none;
+  padding: 2px 0;
+  border-bottom: 2px solid hsl(176, 68%, 64%);
+}
+
+.seeHow button:hover {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+  fill: #FFF;
+}
+
+.seeHow button img {
+  padding-left: 5px;
+}
+
+
+.testimonial {
+  padding: 5rem 5rem;
+}
+
+.quotes {
+  position: relative;
+  left: 1.3rem;
+  top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.testimonialItem {
+  z-index: 2;
+}
+
+.testimonialItemWrap {
+  background: hsl(219, 30%, 18%);
+  border-radius: 4px;
+  width: 350px;
+  z-index: 1;
+}
+
+.testimonialItemText {
+  padding: 30px 20px 10px 20px;
+}
+
+.testimonialItemText p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  word-spacing: 2px;
+}
+
+.testimonialItemImg {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+}
+
+.testimonialItemImg h4 {
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.testimonialItemImg p {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.testimonialItemImg img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.earlyAccess {
+  background: hsl(217, 28%, 15%);
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  height: 250px;
+  z-index: 2;
+  position: relative;
+  top: 5rem;
+}
+
+.accessText h2 {
+  padding: 1rem 0;
+}
+
+.accessText p {
+  font-size: 14px;
+  word-spacing: 2px;
+  line-height: 20px;
+}
+
+input[type=email] {
+  font-size: 14px;
+  margin-top: 28px;
+  padding: 1rem 12rem 1rem 1rem;
+  outline: none;
+  border-style: none;
+  background-color: #FFF;
+  border-radius: 50px;
+}
+
+.accessInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.accessInput button {
+  /* font-size: 14px; */
+  font-weight: 400;
+  margin-top: 28px;
+  padding: 1rem 2.5rem;
+  color: hsl(0, 0%, 100%);
+  
+  outline: none;
+  border-style: none;
+  background-color: hsl(198, 60%, 50%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.accessInput button:hover {
+  background-color: hsl(176, 68%, 64%);
+  outline: none;
+  border-style: none;
+}
+
+.footer {
+  background: hsl(216, 53%, 9%);
+  /* height: 500px; */
+  padding: 12rem 6rem 5rem 6rem;
+}
+
+li {
+  color: #FFF;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.footerLogo {
+  display: flex;
+  text-align: left;
+}
+
+.footerHolder {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoInfo {
+  display: flex;
+}
+
+.logoInfo img{
+  display: inline-flex;
+  width: 13px;
+  height: 18px;
+}
+
+.logoInfo p {
+  font-size: 14px;
+  word-spacing: 2px;
+  width: 300px;
+  padding-left: 25px;
+  /* line-height: 20px; */
+}
+
+.callMail img {
+  padding-right: 20px;
+}
+
+.contact {
+  display: flex;
+}
+
+.contactLine:nth-child(2) {
+  margin-left: 50px;
+}
+
+.contactLine{
+  margin-left: 10px;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.socialIcons img {
+  margin-left: 20px;
+}

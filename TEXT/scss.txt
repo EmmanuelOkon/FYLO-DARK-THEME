@@ -1,0 +1,31 @@
+// - Dark Blue (intro and email sign up background):
+$intro: hsl(217, 28%, 15%);
+$Email: hsl(217, 28%, 15%);
+// - Dark Blue (main background):
+$mainBackground: hsl(218, 28%, 13%);
+// - Dark Blue (footer background):
+$footer: hsl(216, 53%, 9%);
+// - Dark Blue (testimonials background):
+$testimonial: hsl(219, 30%, 18%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks {
+  & a {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    /* color: red; */
+    text-decoration: none;
+    padding-left: 2em;
+    font-family: "Open Sans", sans-serif;
+
+    &:hover {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}

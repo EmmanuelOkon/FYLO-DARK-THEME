@@ -229,6 +229,12 @@ body {
   & .testimonial {
     padding: 5rem 5rem;
 
+    .quotes {
+      position: relative;
+      left: 1.3rem;
+      top: 1rem;
+    }
+
     & .container {
       display: flex;
       justify-content: space-evenly;

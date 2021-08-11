@@ -4,8 +4,7 @@ $Email: hsl(217, 28%, 15%);
 // - Dark Blue (main background)
 $mainBackground: hsl(218, 28%, 13%);
 // - Dark Blue (footer background)
-// $footer: hsl(216, 53%, 9%);
-$footer: red;
+$footer: hsl(216, 53%, 9%);
 // - Dark Blue (testimonials background)
 $testimonial: hsl(219, 30%, 18%);
 // Button on hover & See how call-to-action
@@ -19,5 +18,11 @@ $header: "Raleway", sans-serif;
 // Body font
 $body: "Open Sans", sans-serif;
 // Text COlor
-// $textColor: hsl(0, 0%, 100%);
-$textColor: red;
+$textColor: hsl(0, 0%, 100%);
+
+body {
+  height: 100vh;
+  background-color: $intro;
+}
+
+

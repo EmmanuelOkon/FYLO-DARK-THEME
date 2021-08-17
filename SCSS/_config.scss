@@ -3,3 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+// Media queries for Mobile Screen Sizes
+$mobile: 375px;
+
+@media (max-width: $mobile) {
+  * {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

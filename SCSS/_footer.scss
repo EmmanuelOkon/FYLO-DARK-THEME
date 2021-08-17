@@ -1,0 +1,71 @@
+.footer {
+  background: $footer;
+  height: 500px;
+  padding: 12rem 6rem 5rem 6rem;
+
+  &Logo {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.footerHolder {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  & .logoInfo {
+    display: flex;
+
+    & img {
+      display: inline-flex;
+      width: 13px;
+      height: 18px;
+    }
+
+    & p {
+      font-size: 14px;
+      word-spacing: 2px;
+      width: 300px;
+      padding-left: 25px;
+      font-family: $body;
+      color: $textColor;
+    }
+  }
+
+  & .callMail img {
+    padding-right: 20px;
+  }
+
+  .contact {
+    display: flex;
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+
+    .contactLine {
+      margin-left: 100px;
+    }
+  }
+
+  .socialIcons {
+    display: flex;
+
+    & img {
+      margin-left: 20px;
+    }
+  }
+}
+
+// Media queries for Mobile Screen Sizes
+$mobile: 377px;
+
+@media (max-width: $mobile) {
+  .footer {
+    background-color: red;
+    height: 1000px;
+    // margin-top: 0;
+    padding: 8rem 6rem 5rem 6rem;
+  }
+}

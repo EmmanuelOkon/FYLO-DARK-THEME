@@ -31,23 +31,11 @@
   & .introImg {
     display: flex;
     justify-content: space-around;
-    animation: img;
-    animation-duration: 2s;
-
-    @keyframes img {
-      from {
-        transform: scale(0.9);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
 
     & img {
       width: 500px;
+      animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
     }
   }
 
@@ -64,20 +52,8 @@
         font-family: $header;
         color: $textColor;
         animation: head;
-        animation-delay: 0.1s;
-        animation-duration: 2s;
       }
-      @keyframes head {
-        from {
-          transform: scale(0.9);
-          opacity: 0;
-        }
 
-        to {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
       & button {
         font-size: 14px;
         margin-top: 28px;
@@ -97,21 +73,6 @@
       }
       & .introTextPara {
         padding: 8px 0 4px 0;
-        animation: asd;
-        animation-delay: 0.1s;
-        animation-duration: 2s;
-
-        @keyframes asd {
-          from {
-            transform: scale(0.9);
-            opacity: 0;
-          }
-
-          to {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
 
         & p {
           font-family: $body;
